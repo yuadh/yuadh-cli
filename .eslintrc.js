@@ -7,7 +7,7 @@ module.exports = {
   ],
   plugins: ["prettier"],
   rules: {
-    semi: [2, "never"],
+    // semi: [2, "never"],
     "prettier/prettier": "error",
   },
 };
