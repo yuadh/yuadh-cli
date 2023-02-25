@@ -14,13 +14,14 @@
     "prettier": "^2.8.4"
   },
   "lint-staged": {
-    "**/*.{js,jsx,ts,tsx}": "npx run lint-staged",
+    "**/*.{js,jsx,ts,tsx}": "npx run lint-staged:js",
     "**/*.{js,jsx,tsx,ts,less,md,json}": [
       "prettier --write"
     ]
   },
   "scripts": {
     "prepare": "husky install",
-    "lint-staged": "eslint --ext .js,.jsx,.ts,.tsx "
+    "lint-staged": "lint-staged",
+    "lint-staged:js": "eslint --ext .js,.jsx,.ts,.tsx "
   }
 }
